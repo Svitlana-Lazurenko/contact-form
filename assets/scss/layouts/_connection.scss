@@ -1,0 +1,57 @@
+.connection {
+  padding: rem(200) 0;
+  background-color: $color-primary;
+}
+
+.about {
+  background-image: url("../images/s.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  padding: rem(60) 0;
+
+  @include media(md) {
+    width: 60%;
+    padding: 0;
+    background-size: 90% 100%;
+    background-position: center;
+  }
+
+  &__text {
+    @include media(md) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      background-image: url("../images/face-1.webp");
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 50%;
+      width: rem(115);
+      height: rem(115);
+      position: absolute;
+      top: rem(-180);
+      left: rem(50);
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      background-image: url("../images/face-2.webp");
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 50%;
+      width: rem(85);
+      height: rem(85);
+      position: absolute;
+      top: rem(-100);
+      right: rem(60);
+    }
+  }
+}

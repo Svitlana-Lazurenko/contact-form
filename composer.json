@@ -1,0 +1,20 @@
+{
+  "name": "svitlasvit/contact-form",
+  "version": "1.0.0",
+  "type": "project",
+  "require": {
+    "google/apiclient": "^2.15.0"
+  },
+  "extra": {
+    "google/apiclient-services": [
+      "Sheets"
+    ]
+  },
+  "config": {
+    "optimize-autoloader": false,
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}

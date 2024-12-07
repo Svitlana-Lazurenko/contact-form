@@ -1,0 +1,56 @@
+.form {
+  background-color: $color-primary-light;
+  padding: rem(30);
+  border-radius: 16px;
+
+  @include media(md) {
+    width: 40%;
+  }
+
+  &__title {
+    margin-bottom: rem(30);
+  }
+
+  &__group {
+    margin-bottom: rem(12);
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label {
+    margin-bottom: rem(8);
+  }
+
+  &__control {
+    border: 1px solid $color-text-light;
+    padding: rem(14) rem(18);
+    border-radius: 8px;
+    transition: border-color 0.3s;
+
+    .iti & {
+      width: 100%;
+    }
+
+    &.is-error {
+      border-color: $color-warning;
+    }
+  }
+
+  &__control--description {
+    resize: none;
+  }
+
+  &__error {
+    margin-top: rem(10);
+  }
+
+  &__message {
+    margin-top: rem(15);
+  }
+
+  &__agreement {
+    width: 60%;
+    margin: 0 auto;
+    line-height: 1.4;
+  }
+}

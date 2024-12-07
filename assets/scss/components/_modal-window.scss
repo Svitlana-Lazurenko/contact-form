@@ -1,0 +1,44 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: $color-primary;
+
+  &.is-visible {
+    display: block;
+  }
+
+  &__content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: rem(80) rem(10);
+    border: 1px solid #888;
+    width: 80%;
+    text-align: center;
+    border-radius: 16px;
+    position: relative;
+    border: none;
+
+    @include media(md) {
+      width: 45%;
+    }
+  }
+
+  &__result {
+    margin-bottom: rem(20);
+  }
+
+  &__img {
+    background-image: url("../images/rocket.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: rem(50);
+    height: rem(50);
+    margin: 0 auto rem(20);
+  }
+}

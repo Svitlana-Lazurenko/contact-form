@@ -1,0 +1,8 @@
+# .git ( hidden folder in the root of the project ) is ignored even if not specified in this file
+
+node_modules
+vendor
+
+app.min.js
+app.min.css
+app.min.css.map

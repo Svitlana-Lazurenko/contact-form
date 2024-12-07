@@ -1,0 +1,158 @@
+body {
+  font-family: $font-base;
+  font-size: rem(16);
+  font-weight: 500;
+  color: $color-text;
+
+  @include media(psw) {
+    font-size: rem(20);
+  }
+
+  @include media(ms) {
+    font-size: rem(25);
+  }
+
+  @include media(md) {
+    font-size: rem(16);
+  }
+}
+
+h1 {
+  font-weight: 600;
+  font-family: $font-accent;
+  font-size: rem(35);
+
+  @include media(psw) {
+    font-size: rem(55);
+  }
+
+  @include media(ms) {
+    font-size: rem(65);
+  }
+
+  @include media(md) {
+    font-size: rem(48);
+  }
+}
+.form {
+  &__title {
+    font-weight: 600;
+    font-family: $font-accent;
+    font-size: rem(22);
+    text-align: center;
+
+    @include media(psw) {
+      font-size: rem(30);
+    }
+
+    @include media(ms) {
+      font-size: rem(40);
+    }
+
+    @include media(md) {
+      font-size: rem(22);
+    }
+  }
+
+  &__label {
+    &::placeholder {
+      font-family: $font-accent;
+      font-weight: 500;
+    }
+  }
+
+  &__error,
+  &__message {
+    font-weight: 500;
+    font-family: $font-accent;
+    font-size: rem(11);
+    color: $color-warning;
+
+    @include media(psw) {
+      font-size: rem(16);
+    }
+
+    @include media(ms) {
+      font-size: rem(22);
+    }
+
+    @include media(md) {
+      font-size: rem(11);
+    }
+  }
+
+  &__agreement {
+    font-size: rem(12);
+    color: $color-text-dark-medium;
+    text-align: center;
+
+    @include media(psw) {
+      font-size: rem(17);
+    }
+
+    @include media(ms) {
+      font-size: rem(23);
+    }
+
+    @include media(md) {
+      font-size: rem(12);
+    }
+
+    &-link {
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      color: inherit;
+    }
+  }
+}
+
+.modal {
+  &__text {
+    font-weight: 500;
+    font-family: $font-accent;
+    text-align: center;
+  }
+
+  &__gratitude {
+    font-weight: 600;
+    font-family: $font-accent;
+    font-size: rem(40);
+    text-align: center;
+
+    @include media(psw) {
+      font-size: rem(45);
+    }
+
+    @include media(ms) {
+      font-size: rem(50);
+    }
+
+    @include media(md) {
+      font-size: rem(40);
+    }
+  }
+}
+
+.btn {
+  font-family: $font-accent;
+  color: $color-text-extra-light;
+}
+
+.close-btn {
+  font-weight: 500;
+  font-family: $font-accent;
+  font-size: rem(13);
+  color: $color-text-medium;
+
+  @include media(psw) {
+    font-size: rem(19);
+  }
+
+  @include media(ms) {
+    font-size: rem(25);
+  }
+
+  @include media(md) {
+    font-size: rem(13);
+  }
+}

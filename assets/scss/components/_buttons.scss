@@ -1,0 +1,62 @@
+.btn {
+  margin: rem(20) 0;
+  padding: 20px 0;
+  background-color: $color-accent;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  &:hover,
+  &:focus {
+    background-color: $color-accent-light;
+  }
+
+  &:disabled {
+    background-color: $color-disabled;
+    cursor: not-allowed;
+  }
+
+  &__text {
+    display: inline;
+  }
+}
+
+.spinner {
+  width: rem(10);
+  height: rem(10);
+  border-radius: 50%;
+  background-color: $color-waiting;
+  display: none;
+
+  &.is-visible {
+    display: block;
+    margin-right: rem(10);
+  }
+}
+
+.close-btn {
+  position: absolute;
+  right: rem(20);
+  top: rem(20);
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    margin-right: rem(10);
+  }
+}
+
+.close-btn__icon {
+  background-image: url("../images/cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: rem(15);
+  height: rem(15);
+}
