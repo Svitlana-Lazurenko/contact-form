@@ -53,7 +53,7 @@ Hidden data that must be transmitted with the lead:
 
 The task has been completed in full. An adaptive layout has been developed for screens of different sizes. The layout also meets the requirements of cross-browser compatibility, thanks to the implementation of autoprefixer. No plugins were used when developing the form. On the backend, the data entered through the fields is processed - spaces at the beginning and end are removed, and between words - are collapsed to one. All possible errors are also processed on the backend and returned to the frontend with the corresponding codes - 400 or 500. Information about errors with code 400 appears under the corresponding form field, and information about errors with code 500 is displayed in the console.
 
-**Important**: additional task (send lead to telegram bot, google sheets table) was completed, but not tested. Therefore, the relevant parts of the code are commented out for now. These parts are located in the theme file inc/\_form-handling.php and can be uncommented and tested if necessary. These are lines 4-6, 62, 104-128, 132-163.
+**Important**: additional task (send lead to telegram bot, google sheets table) was completed, but not tested. Therefore, the relevant parts of the code are commented out. These parts are located in the file inc/\_form-handling.php. These are lines 4-6, 62, 104-128, 132-163.
 
 ### Installation and usage:
 
@@ -106,7 +106,7 @@ The task has been completed in full. An adaptive layout has been developed for s
 
 Завдання виконано у повному об'ємі. Розроблена адаптивна верстка під єкрани різних розмірів. Також верстка відповідає вимогам кросбраузерності, завдяки впровадженню autoprefixer. При розробці форми плагіни не були використані. На бекенді дані, введені через поля обробляються - пробіли на початку та кінці видаляються, а між словами - колапсуть до одного. Всі можливі помилки теж обробляються на бекенді та повертаються на фронтенд з відповідними кодами - 400 або 500. Інформація про помилки з кодом 400 з'являється під відповідним полем форми, а інформація про помилки з кодом 500 виводиться у консоль.
 
-**Важливо**: додаткове завдання (надіслати лід у телеграм бот, google sheets table) було виконано, але не протестовано. Тому відповідні частини коду поки що закоментовані. Ці частини знаходяться у файлі теми inc/\_form-handling.php та при потребі можуть бути розкоментовані та перевірені. Це рядки 4-6, 62, 104-128, 132-163.
+**Важливо**: додаткове завдання (надіслати лід у телеграм бот, google sheets table) було виконано, але не протестовано. Тому відповідні частини коду закоментовані. Ці частини знаходяться у файлі inc/\_form-handling.php. Це рядки 4-6, 62, 104-128, 132-163.
 
 ### Встановлення та використання:
 
