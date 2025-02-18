@@ -1,0 +1,38 @@
+// Map of breakpoints
+$breakpoints: (
+  st: 320px,
+  xs: 360px,
+  psw: 412px,
+  sm: 480px,
+  ms: 640px,
+  psh: 732px,
+  md: 768px,
+  mf: 921px,
+  def: 1024px,
+  hg: 1150px,
+  container: 1170px,
+  lg: 1280px,
+  xl: 1366px,
+  mg: 1440px,
+  note: 1536px,
+  dt: 1920px,
+);
+
+// Fonts
+$font-base: "Inter", sans-serif;
+$font-accent: "Inter Tight", sans-serif;
+
+// Colors
+$color-primary: #ebf5ef;
+$color-primary-light: #ffffff;
+$color-secondary: #dae2f4;
+$color-accent: #f2512e;
+$color-accent-light: #f67f64;
+$color-waiting: #e8fb87;
+$color-disabled: #aaaaaa;
+$color-warning: #c42c17;
+$color-text: #212227;
+$color-text-dark-medium: #27252f;
+$color-text-medium: #6f6f72;
+$color-text-light: #8a8e91;
+$color-text-extra-light: #f4f1ff;
